@@ -1,5 +1,49 @@
-.container {
+body {
   background-color: #051D3B;
-  max-width: 1440px;
+}
+
+.container {
+  max-width: 1370px;
   margin: auto;
+  padding: 20px;
 } 
+
+.header {
+  display: grid;
+  grid-template-columns: 245px 1fr 245px;
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.header__logo {
+  grid-column: 1/2;
+  width: 116px;
+  height: 27.2px;
+}
+
+.header__search {
+  grid-column: 2/3;
+  background-color: #2D415B;
+  border: 0;
+  padding: 2px 10px;
+  border-radius: 8px;
+  height: 40px;
+}
+
+.profile {
+  display: flex;
+  grid-column: 3/-1;
+  justify-self: end;
+  align-items: center;
+}
+
+.profile__photo {
+  width: 32px;
+  height: 32px;
+}
+
+.profile__name {
+  color: #ffffff;
+}
