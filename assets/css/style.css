@@ -12,24 +12,25 @@ body {
   max-width: 1370px;
   margin: auto;
   padding: 20px;
+  display: grid;
+  grid-template-columns: 245px 1fr 245px;
+  grid-gap: 20px;
 } 
 
 .header {
   display: grid;
   grid-template-columns: 245px 1fr 245px;
   grid-gap: 20px;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
+  grid-column: 1/-1;
 }
 
 .header__logo {
-  grid-column: 1/2;
+  /* grid-column: 1/2; */
   font-weight: 400;
 }
 
 .header__search {
-  grid-column: 2/3;
+  /* grid-column: 2/3; */
   background-color: #ffffff29;
   color: #ffffff;
   border: 0;
@@ -56,7 +57,7 @@ body {
 
 .profile {
   display: flex;
-  grid-column: 3/-1;
+  grid-column: 3/4;
   justify-self: end;
   align-items: center;
   width: 106px;
