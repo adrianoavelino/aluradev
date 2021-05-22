@@ -73,3 +73,35 @@ body {
   color: #ffffff;
   margin-left: 8px;
 }
+
+.navbar {
+  grid-column: 1/2;
+  color: #ffffff;
+}
+
+.navbar__title {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 0;
+}
+
+.navbar__items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar__items p {
+  margin-left: 16px;
+  color: #ffffff8f;
+}
+
+.navbar__item .navbar__item--active {
+  color: #ffffff;
+}
+
+.navbar__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
