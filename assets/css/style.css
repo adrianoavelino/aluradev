@@ -25,12 +25,10 @@ body {
 }
 
 .header__logo {
-  /* grid-column: 1/2; */
   font-weight: 400;
 }
 
 .header__search {
-  /* grid-column: 2/3; */
   background-color: #ffffff29;
   color: #ffffff;
   border: 0;
