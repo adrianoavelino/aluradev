@@ -167,3 +167,87 @@ body {
   background-color: #5081fb29;
 }
 
+.project {
+  grid-column: 3/4;
+}
+
+.project .project__title {
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 18px;
+  letter-spacing: 0.4em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.project__name,
+.project__description,
+.project__language,
+.project__color,
+.project__button {
+  width: 100%;
+  background-color: #ffffff29;
+  border: 2px solid #ffffff29;
+  border: 0;
+  height: 56px;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  color: #fff;
+  outline: none;
+}
+
+.project__name:hover,
+.project__description:hover,
+.project__language:hover {
+  background: #ffffff3d;
+}
+
+.project__name:focus,
+.project__description:focus,
+.project__language:focus,
+.project__color:focus,
+.project__button:focus {
+  border: 2px solid #ffffff;
+}
+
+.project__name::placeholder,
+.project__description::placeholder {
+  color: #ffffff8a;
+}
+
+.project__color {
+  padding: initial;
+  background-color: inherit;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  margin-bottom: 0;
+}
+
+.project__language {
+  color: #fff;
+}
+
+.project__color option {
+  color: #000;
+}
+
+ .project__description {
+  resize: none;
+}
+
+.project__button {
+  background-color: #5081fb;
+  color: #051d3b;
+  line-height: 18px;
+  margin-top: 40px;
+  transition: .2s background-color;
+}
+
+.project__button:hover {
+  background-color: #7ba4fc;
+  color: #051d3b;
+  line-height: 18px;
+}
