@@ -280,7 +280,7 @@ body {
   }
 
   .navbar {
-    position: absolute;
+    position: fixed;
     top: 6em;
     right: -270px;
     background-color: #2d415b;
