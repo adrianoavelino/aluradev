@@ -3,8 +3,8 @@
   const $button = document.querySelector('.hamburger');
   const $navbar = document.querySelector('.navbar');
   const $hamburger = document.querySelector('.hamburger img');
-  const srcIconNavbarClose = '/assets/img/navbar-close-icon.svg';
-  const srcIconNavbarOpen = '/assets/img/navbar-open-icon.svg';
+  const srcIconNavbarClose = './assets/img/navbar-close-icon.svg';
+  const srcIconNavbarOpen = './assets/img/navbar-open-icon.svg';
   
   $button.addEventListener('click', function() {
     console.log('click');
