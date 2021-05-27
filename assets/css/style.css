@@ -253,6 +253,11 @@ body {
   display: none;
 }
 
+.navbar hr,
+.navbar .profile {
+  display: none;
+}
+
 @media screen and (max-width: 769px) {
   .container {
     grid-template-columns: repeat(3, 1fr);
@@ -261,6 +266,7 @@ body {
   .header {
     grid-column: 1 / -1;
     grid-template-columns: 150px 1fr 50px;
+    margin-bottom: 32px;
   }
 
   .header__logo {
@@ -272,6 +278,37 @@ body {
     align-self: center;
     justify-self: center;
   }
+
+  .navbar {
+    position: absolute;
+    top: 6em;
+    right: -270px;
+    background-color: #2d415b;
+    padding: 32px;
+    height: 80%;
+    border-radius: 8px;
+    width: 254px;
+    transition: all .2s;
+  }
+  
+  .navbar--visible {
+    right: 19px;
+  }
+
+  .hidden {
+    display: none;
+  }
+  
+  .navbar hr {
+    margin: 24px auto;
+    background: #ffffff;
+    opacity: .08;
+  }
+
+  .navbar hr,
+  .navbar .profile {
+    display: block;
+}
 
   main {
     grid-column: 1 / -1;
@@ -299,8 +336,7 @@ body {
     margin-top: 16px;
   }
 
-  .navbar,
-  .profile {
+  .header .profile {
     display: none;
   }
 }
