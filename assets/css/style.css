@@ -53,6 +53,10 @@ body {
   background: rgba(255, 255, 255, .24);
 }
 
+.search-icon {
+  display: none;
+}
+
 .profile {
   display: flex;
   grid-column: 3/4;
@@ -338,5 +342,32 @@ body {
 
   .header .profile {
     display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    grid-template-columns: 150px 1fr 50px;
+  }
+
+  .header {
+    grid-template-columns: 150px 1fr 50px;
+    margin-bottom: 32px;
+  }
+
+  .header__search {
+    display: none;
+  }
+
+  .search-icon {
+    display: block;
+    align-self: center;
+    justify-self: end;
+  }
+
+  .project form {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 24px;
   }
 }
