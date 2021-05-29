@@ -155,7 +155,7 @@ body {
   fill: #27c93f;
 }
 
-.button {
+.button-preview {
   width: 100%;
   padding: 16px;
   border-radius: 8px;
@@ -164,9 +164,10 @@ body {
   color: #fff;
   line-height: 24px;
   outline: none;
+  cursor: pointer;
 }
 
-.button:hover {
+.button-preview:hover {
   background-color: #5081fb29;
 }
 
@@ -322,7 +323,7 @@ body {
   }
 
   .editor,
-  .button,
+  .button-preview,
   .project,
   .project__title,
   .project__name,
