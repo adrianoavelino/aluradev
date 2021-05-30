@@ -322,10 +322,13 @@ body {
     opacity: .08;
   }
 
-  .navbar hr,
-  .navbar .profile {
+  .navbar hr {
     display: block;
-}
+  }
+
+  .navbar .profile {
+    display: flex;
+  }
 
   main {
     grid-column: 1 / -1;
