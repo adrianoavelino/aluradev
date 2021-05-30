@@ -111,9 +111,10 @@ body {
 .navbar__items p {
   margin-left: 16px;
   color: #ffffff8f;
+  transition: all .2s;
 }
 
-.navbar__item .navbar__item--active {
+.navbar__items:hover p {
   color: #ffffff;
 }
 
@@ -121,6 +122,40 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 16px;
+}
+
+.navbar__item svg rect {
+  fill:#5081fb;
+  fill-opacity: .16;
+  transition: all .2s;
+}
+
+.navbar__item svg path {
+  fill: #ffffff;
+  opacity: .48;
+  transition: all .2s;
+}
+
+.navbar__item:hover svg rect {
+  fill-opacity: 1;
+}
+
+.navbar__item:hover svg path {
+  fill: #ffffff;
+  opacity: 1;
+}
+
+.navbar__item--active svg rect {
+  fill-opacity: 1;
+}
+
+.navbar__item--active svg path {
+  opacity: 1;
+}
+
+.navbar__item--active p,
+.navbar__item--active:hover p {
+  color: #ffffff;
 }
 
 .editor {
