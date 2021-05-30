@@ -64,6 +64,13 @@ body {
   align-items: center;
   width: 106px;
   height: 56px;
+  padding: 12px;
+  transition: background-color .2s;
+  border-radius: 8px;
+}
+
+.profile:hover {
+  background-color: #ffffff14;
 }
 
 .profile__photo {
