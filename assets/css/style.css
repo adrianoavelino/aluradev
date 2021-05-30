@@ -315,10 +315,6 @@ body {
   .navbar--visible {
     right: 19px;
   }
-
-  .hidden {
-    display: none;
-  }
   
   .navbar hr {
     margin: 24px auto;
