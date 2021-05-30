@@ -57,6 +57,15 @@ body {
   display: none;
 }
 
+.header__search,
+.navbar__item,
+.button-preview,
+.project__name,
+.project__description,
+.project__button {
+  cursor: pointer;
+}
+
 .profile {
   display: flex;
   grid-column: 3/4;
@@ -171,7 +180,6 @@ body {
   color: #fff;
   line-height: 24px;
   outline: none;
-  cursor: pointer;
 }
 
 .button-preview:hover {
