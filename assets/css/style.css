@@ -25,7 +25,7 @@ body {
 }
 
 .header__logo {
-  font-weight: 400;
+  align-self: center;
 }
 
 .header__search {
@@ -318,10 +318,6 @@ body {
     grid-column: 1 / -1;
     grid-template-columns: 150px minmax(100px, 1fr) 50px;
     margin-bottom: 32px;
-  }
-
-  .header__logo {
-    align-self: center;
   }
 
   .hamburger {
