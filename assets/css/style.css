@@ -114,10 +114,11 @@ body {
   transition: all .2s;
 }
 
-.navbar__item {
+.navbar__item a {
   display: flex;
   align-items: center;
   margin-bottom: 16px;
+  text-decoration: none;
 }
 
 .navbar__item svg rect {
