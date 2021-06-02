@@ -114,10 +114,6 @@ body {
   transition: all .2s;
 }
 
-.navbar__items:hover p {
-  color: #ffffff;
-}
-
 .navbar__item {
   display: flex;
   align-items: center;
@@ -154,7 +150,7 @@ body {
 }
 
 .navbar__item--active p,
-.navbar__item--active:hover p {
+.navbar__item:hover p {
   color: #ffffff;
 }
 
