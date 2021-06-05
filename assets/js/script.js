@@ -5,8 +5,11 @@
   const $EditorBackground = document.querySelector('[data-js=editor]');
   const $buttonPreview = document.querySelector('.button-preview');
   const $color = document.querySelector('[data-js=project__color]');
-  let lastLanguage = $language.value;
+  const $formProject = document.querySelector('[data-js=form-project]');
+  const $projectName = document.querySelector('[data-js=project__name]');
+  const $projectDescription = document.querySelector('[data-js=project__description]');
 
+  let lastLanguage = $language.value;
 
   $language.addEventListener('change', function() {
     updateEditorLanguage();
@@ -26,6 +29,22 @@
 
   $color.addEventListener('input', function() {
     $EditorBackground.style.backgroundColor = $color.value;
+  });
+
+  $formProject.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const project = {
+      id: localStorage.length + 1,
+      name: $projectName.value,
+      description: $projectDescription.value,
+      language: $language.value,
+      color: $color.value,
+      code: $code.innerText
+    }
+
+    localStorage.setItem(project.id, JSON.stringify(project));
+
   });
 
 })();
