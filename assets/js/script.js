@@ -45,6 +45,8 @@
 
     localStorage.setItem(project.id, JSON.stringify(project));
 
+    this.reset();
+
   });
 
 })();
