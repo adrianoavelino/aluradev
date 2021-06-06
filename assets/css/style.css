@@ -304,6 +304,13 @@ body {
 
 .hamburger {
   display: none;
+  padding: 12px;
+  border-radius: 8px;
+  transition: .2s background-color;
+}
+
+.hamburger:hover {
+  background-color: #0b254a;
 }
 
 .navbar hr,
