@@ -318,6 +318,52 @@ body {
   display: none;
 }
 
+.cards {
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.card {
+  background-color: #00000029;
+  border-radius: 8px;
+}
+
+.card__body {
+  background-color: #6bd1ff;
+  border-radius: 8px;
+  padding: 26px;
+}
+
+.card__code {
+  display: block;
+  border-radius: 0 0 8px 8px;
+  background-color: #141414;
+  border: 0;
+  color: #ffffff;
+  height: auto;
+  padding: 16px;
+}
+
+.card footer {
+  padding: 24px;
+}
+
+.card__project-name {
+  color: #ffffff;
+  line-height: 31px;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.card__project-description {
+  font-size: 16px;
+  font-weight: normal;
+  color: #ffffffeb;
+  line-height: 24px;
+}
+
 @media screen and (max-width: 769px) {
   .container {
     grid-template-columns: repeat(3, 1fr);
