@@ -44,10 +44,14 @@
     }
 
     localStorage.setItem(project.id, JSON.stringify(project));
-
-    this.reset();
+    resetForm(this);
 
   });
+
+  function resetForm(form) {
+    form.reset();
+    $code.innerText = '';
+  }
 
 })();
 
