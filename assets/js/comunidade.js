@@ -35,7 +35,7 @@
           </svg>
         </section>
         <code class="card__code ${cardJson.language} hljs" data-js="card__code" aria-label="card">
-          ${cardJson.code}
+          ${scapeHtml(cardJson.code)}
         </code>
       </div>
       <footer>
@@ -44,6 +44,10 @@
       </footer>
     </section>
     `;
+  }
+
+  function scapeHtml(str) {
+    return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
   }
 
   const codeCards = Array.from(document.querySelectorAll('.card__code'));
