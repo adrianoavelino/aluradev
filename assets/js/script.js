@@ -5,6 +5,7 @@
   const $EditorBackground = document.querySelector('[data-js=editor]');
   const $buttonPreview = document.querySelector('.button-preview');
   const $color = document.querySelector('[data-js=project__color]');
+  const $error = document.querySelector('.error');
   const $formProject = document.querySelector('[data-js=form-project]');
   const $projectName = document.querySelector('[data-js=project__name]');
   const $projectDescription = document.querySelector('[data-js=project__description]');
@@ -34,6 +35,11 @@
   $formProject.addEventListener('submit', function(event) {
     event.preventDefault();
 
+    if (!isValidProject()) {
+      $error.style.opacity = 1;
+      return;
+    }
+
     const project = {
       id: localStorage.length + 1,
       name: $projectName.value,
@@ -42,16 +48,18 @@
       color: $color.value,
       code: $code.innerText
     }
-
     localStorage.setItem(project.id, JSON.stringify(project));
     resetForm(this);
-
   });
+
+  function isValidProject() {
+    return $code.innerText.length > 0;
+  }
 
   function resetForm(form) {
     form.reset();
     $code.innerText = '';
+    $error.style.opacity = 0;
   }
 
 })();
-

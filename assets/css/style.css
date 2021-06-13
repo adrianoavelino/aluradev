@@ -155,6 +155,24 @@ body {
   color: #ffffff;
 }
 
+main {
+  position: relative;
+}
+
+.error {
+  grid-column: 1 / 4;
+  background-color: #ff5f56;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  color: #ffffff;
+  position: absolute;
+  top: 36px;
+  right: 36px;
+  opacity: 0;
+  transition: opacity .2s;
+}
+
 .editor {
   grid-column: 2/3;
   background-color: #6bd1ff;
