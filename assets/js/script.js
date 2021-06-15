@@ -9,8 +9,7 @@
   const $formProject = document.querySelector('[data-js=form-project]');
   const $projectName = document.querySelector('[data-js=project__name]');
   const $projectDescription = document.querySelector('[data-js=project__description]');
-
-  let lastLanguage = $language.value;
+  let lastLanguage = 'javascript';
 
   $language.addEventListener('change', function() {
     updateEditorLanguage();
