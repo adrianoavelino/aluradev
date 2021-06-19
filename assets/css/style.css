@@ -410,6 +410,7 @@ main {
     border-radius: 8px;
     width: 254px;
     transition: all .2s;
+    z-index: 1;
   }
   
   .navbar--visible {
