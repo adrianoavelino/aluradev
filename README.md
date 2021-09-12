@@ -1,5 +1,16 @@
 # aluradev
-Aluradev é uma pequena aplicação Frontend utilizando somente HTML, CSS e Javascript desenvolvida dura a **Alura Challenge Front-End** da Alura. Nela é possível salvar blocos de códigos  semelhante a aplicações como [Gist](https://gist.github.com/), [Codepen](https://codepen.io/) e etc, porém, salvando localmente através do Local Storage.
+<p>
+    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/adrianoavelino/aluradev">
+    <a href="https://github.com/my-study-area">
+        <img alt="Made by" src="https://img.shields.io/badge/made%20by-adriano%20avelino-gree">
+    </a>
+    <img alt="Repository size" src="https://img.shields.io/github/repo-size/adrianoavelino/aluradev">
+    <a href="https://github.com/EliasGcf/readme-template/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/adrianoavelino/aluradev">
+    </a>
+</p>
+
+Aluradev é uma pequena aplicação Frontend utilizando somente HTML, CSS e Javascript, desenvolvida durante a **Alura Challenge Front-End** da Alura. Nela é possível salvar blocos de códigos  semelhante a aplicações como [Gist](https://gist.github.com/), [Codepen](https://codepen.io/) e etc, porém, salvando localmente através do Local Storage.
 
 ![Print da Home da aplicação](./assets/img/aluradevprint.png)
 
